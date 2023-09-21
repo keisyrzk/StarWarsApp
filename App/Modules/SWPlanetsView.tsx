@@ -6,7 +6,7 @@ import { services } from '../Services/StarWarsServices';
 import { PlanetsContainer, Planet } from '../Services/Entities/Planet';
 
 function SWPlanetsView() {
-    const planetsQuery = useQuery<PlanetsContainer>('characters', services.starWars.planets.getAll, {
+    const planetsQuery = useQuery<PlanetsContainer>('planets', services.starWars.planets.getAll, {
         onSuccess: (data) => {
           console.log('Fetched planets:', data.count);
         },
