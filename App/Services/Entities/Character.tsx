@@ -7,7 +7,7 @@ export interface CharactersContainer {
 }
 
 export interface Character {
-  name:       string | null;
+  name:       string
   height:     string | null;
   mass:       string | null;
   hair_color: string | null;
